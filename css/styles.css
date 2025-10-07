@@ -21,4 +21,92 @@
 :root {
   --header-font: "Montserrat", sans-serif;
   --body-font: "Lato", sans-serif;
+  --primary-color: #fff;
+  --secondary-color: #2c2c2c;
+  --accent-color: #4356ff;
+  --FAQ-bg-color: #a9a9a9;
+}
+
+/*Create container class*/
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/*Format main background*/
+main {
+  background-color: var(--FAQ-bg-color);
+}
+/* ==========================================================================
+   INDEX PAGE FORMATTING
+   ========================================================================== */
+
+/*Format site header*/
+.site-header {
+  text-align: center;
+  padding: 15px 0;
+}
+
+/*Format site header h1 tag*/
+.site-header h1 {
+  font-family: var(--header-font);
+  font-weight: 700;
+  font-size: 2em;
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
+
+/*Format site header sub text*/
+.site-header p {
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+  /* Mobile styles */
+
+  /*Container width*/
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  /* Tablet styles */
+
+  /*Container width*/
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Laptops */
+@media screen and (max-width: 1024px) {
+  /* Laptop styles */
+
+  /*Container width*/
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+  /* Desktop styles */
+
+  /*Container width*/
+  .container {
+    max-width: 1140px;
+  }
 }
