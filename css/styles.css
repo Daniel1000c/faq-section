@@ -29,6 +29,7 @@
 /*Create container class*/
 .container {
   width: 100%;
+  max-width: 700px;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
@@ -37,6 +38,7 @@
 /*Format main background*/
 main {
   background-color: #f9fbfd;
+  padding: 20px 0;
 }
 /* ==========================================================================
    INDEX PAGE FORMATTING
@@ -69,14 +71,57 @@ main {
 
 /*Format section padding*/
 section {
-  padding: 20px 0;
+  padding: 15px;
+  font-family: var(--body-font);
 }
 
 /*Format section h2 tags*/
 section h2 {
   font-family: var(--header-font);
   font-weight: 700;
+  font-size: 20px;
   margin-bottom: 15px;
+}
+
+/*Format section p tag*/
+section p {
+  line-height: 2;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/*Format section a tag*/
+section a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+
+/*Create section link hover*/
+section a:hover {
+  color: #2c2c2c;
+}
+
+/*Format section list*/
+section ul {
+  list-style-position: inside;
+}
+
+/*Format list items*/
+section ul li {
+  margin-bottom: 20px;
+}
+
+/*Format section hr */
+hr {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  height: 2px;
+  border: none;
+  background-color: lightgray;
+  border-radius: 100px;
 }
 
 /* ==========================================================================
