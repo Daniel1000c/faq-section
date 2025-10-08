@@ -24,7 +24,6 @@
   --primary-color: #fff;
   --secondary-color: #2c2c2c;
   --accent-color: #4356ff;
-  --FAQ-bg-color: #a9a9a9;
 }
 
 /*Create container class*/
@@ -37,7 +36,7 @@
 
 /*Format main background*/
 main {
-  background-color: var(--FAQ-bg-color);
+  background-color: #f9fbfd;
 }
 /* ==========================================================================
    INDEX PAGE FORMATTING
@@ -47,6 +46,7 @@ main {
 .site-header {
   text-align: center;
   padding: 15px 0;
+  margin-bottom: 50px;
 }
 
 /*Format site header h1 tag*/
@@ -64,6 +64,71 @@ main {
   font-weight: 400;
   font-size: 1em;
   letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/*Format section padding*/
+section {
+  padding: 20px 0;
+}
+
+/*Format section h2 tags*/
+section h2 {
+  font-family: var(--header-font);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/*Format hr rule*/
+hr {
+  width: 680px;
+  margin: 0 auto;
+  border: none;
+  background-color: lightgray;
+  height: 2px;
+  border-radius: 100px;
+  margin-bottom: 25px;
+}
+
+/*Format text container*/
+.text-container {
+  width: 700px;
+}
+
+/*Format text-container text*/
+.text-container p {
+  font-family: var(--body-font);
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  line-height: 2;
+  margin-bottom: 15px;
+}
+
+/*Format text-container links*/
+.text-container a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+
+/*Create link hover class*/
+.text-container a:hover {
+  color: #5f6eff;
+}
+
+/*Create visited link class*/
+.text-container a:visited {
+  color: chocolate;
+}
+
+/*Format text-container list*/
+.text-container ul {
+  list-style-position: inside;
+}
+
+/*Format list items*/
+.text-container ul li {
   margin-bottom: 10px;
 }
 
